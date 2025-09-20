@@ -218,84 +218,103 @@
     </div>
 
     <!-- Certificates Grid -->
-<div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+<section class="py-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-10">
 
-  <!-- Certificate 1 -->
-  <div class="relative bg-white rounded-2xl p-8 shadow-xl border-t-4 border-blue-600 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
-    <div>
+      <!-- Certificate PF -->
+      <div class="relative bg-white rounded-2xl shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300 group">
+        <!-- Badge -->
+        <span class="absolute -top-4 left-6 bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-full shadow-md">
+          Mais Popular
+        </span>
 
-      <div class="mb-6">
-        <div class="inline-flex items-center justify-center w-16 h-16 rounded-xl mb-4 bg-gradient-to-br from-blue-100 to-blue-200">
-          <span class="text-2xl font-bold text-blue-600">PF</span>
+        <div class="p-8 flex flex-col h-full">
+          <!-- Icon + Title -->
+          <div class="flex items-center space-x-4 mb-6">
+            <div class="w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 text-white text-xl font-bold shadow-lg">
+              PF
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 leading-snug">
+              Certificado Digital PF A1 CLOUD
+            </h3>
+          </div>
+
+          <!-- Description -->
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Certificado digital para pessoas físicas (MEI ou Autônomo). 
+            Validade de 1 ano. Instalação prática em computador ou notebook.
+          </p>
+
+          <!-- Features -->
+          <ul class="mb-8 space-y-3">
+            <li class="flex items-center space-x-3 text-gray-700">
+              <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+              <span>Validade de 1 ano</span>
+            </li>
+            <li class="flex items-center space-x-3 text-gray-700">
+              <i data-lucide="laptop" class="w-5 h-5 text-green-500"></i>
+              <span>Instalação em computador ou notebook</span>
+            </li>
+          </ul>
+
+          <!-- Price + CTA -->
+          <div class="mt-auto flex items-center justify-between">
+            <div class="text-3xl font-extrabold text-gray-900">R$129,00</div>
+            <button class="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition-all duration-200 group-hover:scale-105">
+              <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+              Comprar
+            </button>
+          </div>
         </div>
-        <h3 class="text-2xl font-bold text-gray-900 mb-3">Certificado Digital PF A1 CLOUD</h3>
-        <p class="text-gray-600 mb-6 leading-relaxed">
-          Certificado digital para pessoas físicas MEI ou Autônoma. Com validade de um ano. Instalação no computador ou notebook.
-        </p>
       </div>
 
-      <ul class="mb-8 space-y-3">
-        <li class="flex items-center space-x-3 text-gray-700">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-          </svg>
-          <span>Validade de 1 ano</span>
-        </li>
-        <li class="flex items-center space-x-3 text-gray-700">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-          </svg>
-          <span>Instalação em computador ou notebook</span>
-        </li>
-      </ul>
-    </div>
+      <!-- Certificate PJ -->
+      <div class="relative bg-white rounded-2xl shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300 group">
+        <div class="p-8 flex flex-col h-full">
+          <!-- Icon + Title -->
+          <div class="flex items-center space-x-4 mb-6">
+            <div class="w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-purple-500 to-purple-700 text-white text-xl font-bold shadow-lg">
+              PJ
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 leading-snug">
+              Certificado Digital PJ A1 CLOUD
+            </h3>
+          </div>
 
-    <div class="flex items-center justify-between mt-auto">
-      <div class="text-3xl font-bold text-gray-900">R$129,00</div>
-      <button class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition-all duration-200 group-hover:scale-105">
-        Comprar Agora
-      </button>
-    </div>
-  </div>
+          <!-- Description -->
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Certificado digital para empresas (Pessoa Jurídica) com validade de 1 ano. 
+            Arquivo pronto para instalação em computador ou notebook.
+          </p>
 
-  <!-- Certificate 2 -->
-  <div class="relative bg-white rounded-2xl p-8 shadow-xl border-t-4 border-purple-600 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
-    <div>
-      <div class="mb-6">
-        <div class="inline-flex items-center justify-center w-16 h-16 rounded-xl mb-4 bg-gradient-to-br from-purple-100 to-purple-200">
-          <span class="text-2xl font-bold text-purple-600">PJ</span>
+          <!-- Features -->
+          <ul class="mb-8 space-y-3">
+            <li class="flex items-center space-x-3 text-gray-700">
+              <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+              <span>Validade de 1 ano</span>
+            </li>
+            <li class="flex items-center space-x-3 text-gray-700">
+              <i data-lucide="laptop" class="w-5 h-5 text-green-500"></i>
+              <span>Instalação em computador ou notebook</span>
+            </li>
+          </ul>
+
+          <!-- Price + CTA -->
+          <div class="mt-auto flex items-center justify-between">
+            <div class="text-3xl font-extrabold text-gray-900">R$169,00</div>
+            <button class="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition-all duration-200 group-hover:scale-105">
+              <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+              Comprar
+            </button>
+          </div>
         </div>
-        <h3 class="text-2xl font-bold text-gray-900 mb-3">Certificado Digital PJ A1 CLOUD</h3>
-        <p class="text-gray-600 mb-6 leading-relaxed">
-          Certificado digital para pessoa jurídica válido por um ano. Arquivo para instalação no computador ou notebook.
-        </p>
       </div>
 
-      <ul class="mb-8 space-y-3">
-        <li class="flex items-center space-x-3 text-gray-700">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-          </svg>
-          <span>Validade de 1 ano</span>
-        </li>
-        <li class="flex items-center space-x-3 text-gray-700">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-          </svg>
-          <span>Instalação em computador ou notebook</span>
-        </li>
-      </ul>
-    </div>
-
-    <div class="flex items-center justify-between mt-auto">
-      <div class="text-3xl font-bold text-gray-900">R$169,00</div>
-      <button class="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition-all duration-200 group-hover:scale-105">
-        Comprar Agora
-      </button>
     </div>
   </div>
+</section>
 
-</div>
 
   </div>
 </section>
