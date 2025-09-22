@@ -24,6 +24,13 @@
       </div>
     </a>
 
+    <!-- Botão Mobile -->
+<div class="md:hidden">
+  <button id="menu-btn" class="text-white">
+    <i data-lucide="menu" class="w-8 h-8"></i>
+  </button>
+</div>
+
     <!-- NAV -->
     <nav class="hidden md:flex flex-1 justify-center space-x-8">
       <a href="#inicio" class="text-white font-medium hover:text-blue-400 transition">Início</a>
@@ -42,6 +49,27 @@
     </div>
   </div>
 </header>
+
+<!-- Sidebar -->
+<div id="sidebar" 
+  class="fixed top-0 left-0 h-full w-64 bg-slate-900 shadow-lg transform -translate-x-full transition-transform duration-300 z-50 flex flex-col p-6 space-y-6">
+
+  <!-- Botão Fechar -->
+  <button id="close-sidebar" class="self-end text-white">
+    <i data-lucide="x" class="w-7 h-7"></i>
+  </button>
+
+  <!-- Links -->
+  <nav class="flex flex-col space-y-4 mt-6">
+    <a href="#inicio" class="text-white text-lg font-medium hover:text-blue-400">Início</a>
+    <a href="#certificados" class="text-white text-lg font-medium hover:text-blue-400">Certificados</a>
+    <a href="#comofunciona" class="text-white text-lg font-medium hover:text-blue-400">Como Funciona</a>
+    <a href="https://wa.me/551151231321" target="_blank"
+       class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-semibold shadow-md">
+       WhatsApp
+    </a>
+  </nav>
+</div>
 
 <!-- HERO -->
 <section id="inicio" class="relative min-h-screen flex items-center pt-32 lg:pt-40 pb-16 overflow-hidden">
@@ -217,9 +245,7 @@
     </div>
 
     <!-- Certificates Grid -->
-<section class="py-20 bg-gray-50">
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="grid md:grid-cols-2 gap-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
 
       <!-- Certificate PF -->
       <div class="relative bg-white rounded-2xl shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300 group">
@@ -315,8 +341,7 @@
 </section>
 
 
-  </div>
-</section>
+
 
 <!-- TESTIMONIALS -->
 <section class="py-20 bg-gray-50">
@@ -348,6 +373,74 @@
   </div>
 </section>
 
+<!-- CONTACT SECTION -->
+<section id="contato" class="py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+    
+    <!-- Title -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Fale Conosco</h2>
+      <p class="text-lg text-blue-100 max-w-2xl mx-auto">
+        Entre em contato pelo formulário ou através de nossos canais de atendimento.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12">
+      
+      <!-- Contact Form -->
+      <div class="bg-white/10 backdrop-blur-lg rounded-2xl shadow-lg p-8 border border-white/20">
+        <form action="#" method="POST" class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-blue-100 mb-2">Nome</label>
+            <input type="text" id="name" name="name" required 
+              class="w-full px-4 py-3 rounded-lg bg-white/90 text-gray-900 border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none transition">
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium text-blue-100 mb-2">E-mail</label>
+            <input type="email" id="email" name="email" required 
+              class="w-full px-4 py-3 rounded-lg bg-white/90 text-gray-900 border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none transition">
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium text-blue-100 mb-2">Mensagem</label>
+            <textarea id="message" name="message" rows="4" required 
+              class="w-full px-4 py-3 rounded-lg bg-white/90 text-gray-900 border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none transition"></textarea>
+          </div>
+
+          <button type="submit" 
+            class="w-full bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition-all duration-300">
+            Enviar Mensagem
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="flex flex-col justify-center space-y-6 text-blue-100">
+        <div class="flex items-center space-x-4">
+          <i data-lucide="phone" class="w-6 h-6 text-blue-400"></i>
+          <span>(11) 5123-1321</span>
+        </div>
+        <div class="flex items-center space-x-4">
+          <i data-lucide="mail" class="w-6 h-6 text-blue-400"></i>
+          <span>contato@cloudcertificados.com</span>
+        </div>
+        <div class="flex items-center space-x-4">
+          <i data-lucide="map-pin" class="w-6 h-6 text-blue-400"></i>
+          <span>São Paulo - SP</span>
+        </div>
+
+        <a href="https://wa.me/551151231321" target="_blank" 
+           class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition w-max">
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
   <!-- FOOTER -->
 <footer class="bg-white border-t border-gray-200 py-12 w-full">
@@ -363,6 +456,38 @@
   </div>
 </footer>
 
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const closeBtn = document.getElementById("close-sidebar");
+  const sidebar = document.getElementById("sidebar");
+  const overlay = document.getElementById("overlay");
+
+  menuBtn.addEventListener("click", () => {
+    sidebar.classList.remove("-translate-x-full");
+    overlay.classList.remove("hidden");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    sidebar.classList.add("-translate-x-full");
+    overlay.classList.add("hidden");
+  });
+
+  overlay.addEventListener("click", () => {
+    sidebar.classList.add("-translate-x-full");
+    overlay.classList.add("hidden");
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    if (window.lucide) {
+      window.lucide.replace();
+    }
+  });
+</script>
+
+<script>
+  lucide.createIcons();
+</script>
 
 </body>
 </html>
