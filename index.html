@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Certificados</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- HEADER -->
+<!-- HEADER FIXO -->
+<header class="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 top-0 w-full bg-white/10 backdrop-blur-md border-b border-white/20 z-50 transition-colors duration-300">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- LOGO -->
+    <a href="#inicio" class="flex items-center space-x-3">
+      <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl flex items-center justify-center shadow-lg">
+        <img src="logo.png" alt="Logo Cloud Certificados" class="w-8 h-8 object-contain">
+      </div>
+      <div class="hidden sm:flex flex-col">
+        <h1 class="text-xl font-bold text-white">Cloud</h1>
+        <p class="text-xs text-white">Certificados</p>
+      </div>
+    </a>
+
+    <!-- Botão Mobile -->
+<div class="md:hidden">
+  <button id="menu-btn" class="text-white">
+    <i data-lucide="menu" class="w-8 h-8"></i>
+  </button>
+</div>
+
+    <!-- NAV -->
+    <nav class="hidden md:flex flex-1 justify-center space-x-8">
+      <a href="#inicio" class="text-white font-medium hover:text-blue-400 transition">Início</a>
+      <a href="#certificados" class="text-white font-medium hover:text-blue-400 transition">Certificados</a>
+      <a href="#comofunciona" class="text-white font-medium hover:text-blue-400 transition">Como Funciona</a>
+    </nav>
+
+    <!-- WHATSAPP -->
+    <div class="hidden md:flex">
+      <a href="https://wa.me/5511941686689"" target="_blank" class="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-4 py-2 rounded-lg font-semibold shadow-md flex items-center space-x-2 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 50 50" fill="currentColor">
+          <path d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z"/>
+        </svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Sidebar -->
+<div id="sidebar" 
+  class="fixed top-0 left-0 h-full w-64 bg-slate-900 shadow-lg transform -translate-x-full transition-transform duration-300 z-50 flex flex-col p-6 space-y-6">
+
+  <!-- Botão Fechar -->
+  <button id="close-sidebar" class="self-end text-white">
+    <i data-lucide="x" class="w-7 h-7"></i>
+  </button>
+
+  <!-- Links -->
+  <nav class="flex flex-col space-y-4 mt-6">
+    <a href="#inicio" class="text-white text-lg font-medium hover:text-blue-400">Início</a>
+    <a href="#certificados" class="text-white text-lg font-medium hover:text-blue-400">Certificados</a>
+    <a href="#comofunciona" class="text-white text-lg font-medium hover:text-blue-400">Como Funciona</a>
+    <a href="https://wa.me/5511941686689"" target="_blank"
+       class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-semibold shadow-md">
+       WhatsApp
+    </a>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section id="inicio" class="relative min-h-screen flex items-center pt-32 lg:pt-40 pb-16 overflow-hidden">
+  <!-- Background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800"></div>
+  <div class="absolute inset-0 bg-no-repeat bg-center bg-cover opacity-30" style="background-image: url('hero-bg.jpg');"></div>
+
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- TEXT -->
+      <div class="space-y-6 lg:space-y-8 text-center lg:text-left">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+          Obtenha seu Certificado Digital 
+          <span class="block bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">A1 PF ou PJ</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-blue-100 leading-relaxed max-w-xl mx-auto lg:mx-0">
+          Assine documentos e acesse sistemas digitais com <strong>segurança</strong> e validade jurídica. Processo rápido e 100% online.
+        </p>
+
+        <!-- BENEFÍCIOS -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0">
+          <div class="flex items-center space-x-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="text-blue-100">Válido Jurídico</span>
+          </div>
+          <div class="flex items-center space-x-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="text-blue-100">Instalação Simples</span>
+          </div>
+        </div>
+
+        <!-- CTA BUTTONS -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-6">
+          <a href="#certificados" class="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg transition-all duration-300 flex items-center justify-center space-x-2">
+            <span>Ver Certificados</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#comofunciona" class="border-2 border-blue-400 text-blue-100 hover:bg-blue-400 hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center justify-center space-x-2">
+            <span>Como Funciona</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certificados" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Title and description -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Nossos Certificados</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Escolha o certificado digital ideal para suas necessidades, seja pessoa física ou jurídica.
+      </p>
+    </div>
+
+    <!-- Certificates Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+
+      <!-- Certificate PF -->
+      <div class="relative bg-white rounded-2xl shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300 group">
+        <!-- Badge -->
+        <span class="absolute -top-4 left-6 bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-full shadow-md">
+          Mais Popular
+        </span>
+
+        <div class="p-8 flex flex-col h-full">
+          <!-- Icon + Title -->
+          <div class="flex items-center space-x-4 mb-6">
+            <div class="w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 text-white text-xl font-bold shadow-lg">
+              PF
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 leading-snug">
+              Certificado Digital PF A1 CLOUD
+            </h3>
+          </div>
+
+          <!-- Description -->
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Certificado digital para pessoas físicas (MEI ou Autônomo). 
+            Validade de 1 ano. Instalação prática em computador ou notebook.
+          </p>
+
+          <!-- Features -->
+          <ul class="mb-8 space-y-3">
+            <li class="flex items-center space-x-3 text-gray-700">
+              <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+              <span>Validade de 1 ano</span>
+            </li>
+            <li class="flex items-center space-x-3 text-gray-700">
+              <i data-lucide="laptop" class="w-5 h-5 text-green-500"></i>
+              <span>Instalação em computador ou notebook</span>
+            </li>
+          </ul>
+
+          <!-- Price + CTA -->
+          <div class="mt-auto flex items-center justify-between">
+            <div class="text-3xl font-extrabold text-gray-900">R$129,00</div>
+                <a href="https://www.asaas.com/c/6evog6hhhj5igcpc" 
+                class="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition-all duration-200 group-hover:scale-105">
+                <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                Comprar
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate PJ -->
+      <div class="relative bg-white rounded-2xl shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300 group">
+        <div class="p-8 flex flex-col h-full">
+          <!-- Icon + Title -->
+          <div class="flex items-center space-x-4 mb-6">
+            <div class="w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-purple-500 to-purple-700 text-white text-xl font-bold shadow-lg">
+              PJ
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 leading-snug">
+              Certificado Digital PJ A1 CLOUD
+            </h3>
+          </div>
+
+          <!-- Description -->
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Certificado digital para empresas (Pessoa Jurídica) com validade de 1 ano. 
+            Arquivo pronto para instalação em computador ou notebook.
+          </p>
+
+          <!-- Features -->
+          <ul class="mb-8 space-y-3">
+            <li class="flex items-center space-x-3 text-gray-700">
+              <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+              <span>Validade de 1 ano</span>
+            </li>
+            <li class="flex items-center space-x-3 text-gray-700">
+              <i data-lucide="laptop" class="w-5 h-5 text-green-500"></i>
+              <span>Instalação em computador ou notebook</span>
+            </li>
+          </ul>
+
+          <!-- Price + CTA -->
+          <div class="mt-auto flex items-center justify-between">
+            <div class="text-3xl font-extrabold text-gray-900">R$169,00</div>
+              <a href="https://www.asaas.com/c/uvryp0729xknhnbz" 
+                class="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition-all duration-200 group-hover:scale-105">
+                <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                Comprar
+              </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <!-- FEATURES -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6">
+    
+    <!-- Título e descrição -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">
+        Por que escolher nossos certificados?
+      </h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        Oferecemos a melhor experiência em certificação digital com tecnologia de ponta e suporte especializado.
+      </p>
+    </div>
+
+    <!-- Features grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+      
+      <!-- Feature Item 1 -->
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200 group hover:-translate-y-1">
+        <div class="mb-4 flex justify-center">
+          <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 text-2xl group-hover:scale-110 transition-transform duration-300">
+            <!-- Ícone SVG ou letra -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-900 mb-2 text-center">
+          Certificado Rápido
+        </h3>
+        <p class="text-gray-600 text-center leading-relaxed text-sm">
+          Emissão rápida e totalmente online, sem complicações.
+        </p>
+      </div>
+
+
+      <!-- Feature Item 4 -->
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200 group hover:-translate-y-1">
+        <div class="mb-4 flex justify-center">
+          <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 text-2xl group-hover:scale-110 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6" />
+            </svg>
+          </div>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-900 mb-2 text-center">
+          Instalação Simples
+        </h3>
+        <p class="text-gray-600 text-center leading-relaxed text-sm">
+          Processo de instalação rápido e intuitivo.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- How it Works Section -->
+<section id="comofunciona" class="py-24 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+    
+    <!-- Title -->
+    <div class="text-center mb-20">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">Como Funciona</h2>
+      <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+        Em apenas <span class="font-semibold text-blue-600">3 passos simples</span> você garante seu certificado digital online.
+      </p>
+    </div>
+
+    <!-- Steps -->
+    <div class="relative grid md:grid-cols-3 gap-12">
+
+      <!-- Connection Line -->
+      <div class="hidden md:block absolute top-14 left-0 right-0 w-full h-1 bg-gradient-to-r from-blue-200 via-indigo-200 to-purple-200 rounded-full"></div>
+
+      <!-- Step 1 -->
+      <div class="relative flex flex-col items-center text-center">
+        <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-indigo-700 text-white text-2xl font-bold shadow-lg mb-6 transform transition duration-300 group-hover:scale-110">
+          1
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">Cadastro Rápido</h3>
+        <p class="text-gray-600 leading-relaxed max-w-xs">Informe seus dados em poucos minutos de forma simples e segura.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="relative flex flex-col items-center text-center">
+        <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-indigo-600 to-purple-700 text-white text-2xl font-bold shadow-lg mb-6">
+          2
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">Verificação</h3>
+        <p class="text-gray-600 leading-relaxed max-w-xs">Fazemos a validação da sua identidade com rapidez e total segurança.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="relative flex flex-col items-center text-center">
+        <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-600 to-pink-600 text-white text-2xl font-bold shadow-lg mb-6">
+          3
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">Emissão</h3>
+        <p class="text-gray-600 leading-relaxed max-w-xs">Pronto! Receba seu certificado digital e comece a usar imediatamente.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Certificates Section -->
+
+
+
+
+
+<!-- TESTIMONIALS -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">O que dizem nossos clientes</h2>
+      <p class="text-lg text-gray-600">Mais de 500 pessoas já emitiram seus certificados com a gente.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="bg-white rounded-xl shadow-md p-6 text-center">
+        <p class="text-gray-600 italic">“Processo rápido, em menos de 30 minutos já tinha meu certificado.”</p>
+        <div class="mt-4 font-semibold text-gray-900">João Martins</div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white rounded-xl shadow-md p-6 text-center">
+        <p class="text-gray-600 italic">“Atendimento ótimo pelo WhatsApp, recomendo demais!”</p>
+        <div class="mt-4 font-semibold text-gray-900">Ana Souza</div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white rounded-xl shadow-md p-6 text-center">
+        <p class="text-gray-600 italic">“Muito prático, não precisei sair de casa.”</p>
+        <div class="mt-4 font-semibold text-gray-900">Carlos Lima</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contato" class="py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+    
+    <!-- Title -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Fale Conosco</h2>
+      <p class="text-lg text-blue-100 max-w-2xl mx-auto">
+        Entre em contato pelo formulário ou através de nossos canais de atendimento.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12">
+      
+      <!-- Contact Form -->
+      <div class="bg-white/10 backdrop-blur-lg rounded-2xl shadow-lg p-8 border border-white/20">
+        <form id="whatsappForm" class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-blue-100 mb-2">Nome</label>
+            <input type="text" id="name" name="name" required 
+              class="w-full px-4 py-3 rounded-lg bg-white/90 text-gray-900 border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none transition">
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium text-blue-100 mb-2">E-mail</label>
+            <input type="email" id="email" name="email" required 
+              class="w-full px-4 py-3 rounded-lg bg-white/90 text-gray-900 border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none transition">
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium text-blue-100 mb-2">Mensagem</label>
+            <textarea id="message" name="message" rows="4" required 
+              class="w-full px-4 py-3 rounded-lg bg-white/90 text-gray-900 border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none transition"></textarea>
+          </div>
+
+          <button type="submit" 
+            class="w-full bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition-all duration-300">
+            Enviar pelo WhatsApp
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="flex flex-col justify-center space-y-6 text-blue-100">
+        <div class="flex items-center space-x-4">
+          <i data-lucide="phone" class="w-6 h-6 text-blue-400"></i>
+          <span>(11) 5123-1321</span>
+        </div>
+        <div class="flex items-center space-x-4">
+          <i data-lucide="mail" class="w-6 h-6 text-blue-400"></i>
+          <span>contato@cloudcertificados.com</span>
+        </div>
+        <div class="flex items-center space-x-4">
+          <i data-lucide="map-pin" class="w-6 h-6 text-blue-400"></i>
+          <span>São Paulo - SP</span>
+        </div>
+
+        <a href="https://wa.me/5511941686689"" target="_blank" 
+           class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition w-max">
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a href="https://wa.me/5511941686689" target="_blank" 
+   class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 flex items-center justify-center">
+  <i data-lucide="message-circle" class="w-6 h-6"></i>
+</a>
+
+  <!-- FOOTER -->
+<footer class="bg-white border-t border-gray-200 py-12 w-full">
+  <!-- Div grudada no canto esquerdo -->
+  <div class="flex items-center space-x-3 ml-10">
+    <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl flex items-center justify-center shadow-lg">
+      <img src="logo.png" alt="Logo Cloud Certificados" class="w-8 h-8 object-contain">
+    </div>
+    <div>
+      <div class="text-gray-900 font-bold">Cloud Certificados</div>
+      <div class="text-gray-600 text-sm">&copy; 2025 Todos os direitos reservados.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const closeBtn = document.getElementById("close-sidebar");
+  const sidebar = document.getElementById("sidebar");
+  const overlay = document.getElementById("overlay");
+
+  menuBtn.addEventListener("click", () => {
+    sidebar.classList.remove("-translate-x-full");
+    overlay.classList.remove("hidden");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    sidebar.classList.add("-translate-x-full");
+    overlay.classList.add("hidden");
+  });
+
+  overlay.addEventListener("click", () => {
+    sidebar.classList.add("-translate-x-full");
+    overlay.classList.add("hidden");
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    if (window.lucide) {
+      window.lucide.replace();
+    }
+  });
+</script>
+
+<script>
+  document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    // monta a mensagem
+    const text = `Olá! Me chamo ${name}%0A📧 Email: ${email}%0A💬 Mensagem: ${message}`;
+    const phone = "5511941686689"; // seu número de WhatsApp
+
+    // redireciona para o WhatsApp
+    window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
+  });
+</script>
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>
